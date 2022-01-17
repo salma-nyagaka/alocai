@@ -19,5 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('alocaiapi.apps.database.urls')),
+    path('api/v1/', include('alocaiapi.apps.games.urls')),
 
 ]

@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'alocaiapi.apps.database'
+    'alocaiapi.apps.database',
+    'alocaiapi.apps.games'
+
 ]
 
 MIDDLEWARE = [
@@ -83,7 +85,7 @@ DATABASES = {
         'NAME': 'alocai',
         'PASSWORD': 'alocai',
         'USER': 'alocai',
-        'HOST': 'db',
+        'HOST': 'localhost',
         'PORT': '5432',
 
     }

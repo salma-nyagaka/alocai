@@ -1,4 +1,4 @@
-  
+
 import json
 
 from rest_framework.exceptions import ErrorDetail
@@ -6,6 +6,9 @@ from rest_framework.renderers import JSONRenderer
 
 
 class RequestJSONRenderer(JSONRenderer):
+    """ Helper function to format response
+    messages """
+
     charset = 'utf-8'
 
     def render(self, data, media_type=None, renderer_context=None):
